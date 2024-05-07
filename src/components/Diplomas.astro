@@ -4,7 +4,6 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-import Laravel from "./icons/Laravel.astro"
 
 const TAGS = {
   NEXT: {
@@ -17,11 +16,6 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
-  LARAVEL: {
-    name: "Laravel",
-    class: "bg-black text-white",
-    icon: Laravel,
-  },
 }
 const PROJECTS = [
   {
@@ -31,7 +25,7 @@ const PROJECTS = [
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.LARAVEL],
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
@@ -73,36 +67,18 @@ const PROJECTS = [
         </ul>
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-2">
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
               <GitHub class="size-6" />
-              Código
+              Code
               
             </LinkButton>
           )}
           {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
-              Fotos
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Analista
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Datos
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Pruebas
+              Preview
             </LinkButton>
           )}
         </footer>
