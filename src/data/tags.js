@@ -1,4 +1,3 @@
-import GitHub from "/src/components/icons/GitHub.astro"
 import NextJS from "/src/components/icons/NextJS.astro"
 import Tailwind from "/src/components/icons/Tailwind.astro"
 import Laravel from "/src/components/icons/Laravel.astro"
