@@ -56,7 +56,7 @@ export const TAGS = {
       icon: Postgres,
     },
     BOOTSTRAP: {
-      name: "Bootstrap CSS",
+      name: "Bootstrap",
       class: "bg-black text-white",
       icon: Bootstrap,
     },

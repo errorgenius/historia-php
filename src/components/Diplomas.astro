@@ -1,7 +1,7 @@
 ---
 import {DIPLOMAS} from '@/data/diplomas'
 import Badge from './Badge.astro';
-
+import { Image } from "astro:assets"
 ---
 
 <div class="flex p-0 m-0">
@@ -16,18 +16,17 @@ import Badge from './Badge.astro';
             <div class="flex flex-col col-span-6 row-span-5 gap-3 pb-4">
               <div class="relative items-center transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                <img
-                  alt={title}
-                  //class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                  style="max-height: 250px; min-height: 250px;"
-                  loading="lazy"
+                <Image
                   src={image}
+                  alt={title}
+                  style="max-height: 250px; min-height: 250px;"
+                  //class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
                 />
                 </a>
               </div>
               <p class="flex justify-center">{title}</p>
               <div class="mx-auto">
-                <ul class="flex flex-row mb-2 gap-x-2">
+                <ul class="grid gap-4 grid-cols-2">
                   {tags.map((tag) => (
                     <Badge>{tag.name}</Badge>
                   ))}
