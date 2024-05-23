@@ -1,35 +1,31 @@
 ---
-const personalImageAlt = "Carlos Brayan"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import GitHub from "./icons/GitHub.astro"
+import Php from "./icons/Php.astro"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
-    <img
-      class="rounded-full shadow-lg size-16"
-      src="/yo.jpg"
-      alt={personalImageAlt}
-    />
+    <Php class="size-16" />
     <a
-      href="https://linkedin.com/in/carlos-brayan-error/"
+      href="https://php"
       target="_blank"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Ocupado</Badge>
+      <Badge>Versión actual: v8.3</Badge>
     </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Soy Carlos Brayan Rámila Chorens
+  PHP: Cronología de un Código
   </h1>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-200 [&>strong]:text-blue-500 [&>strong]:font-semibold dark:text-gray-300"
   >
     +3 años de experiencia como desarrollador web. <strong
       > Estudiante de Ingeniería en Ciencias Informáticas</strong

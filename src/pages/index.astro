@@ -1,21 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
-import CodeIcon from "@/components/icons/Code.astro";
 import Experience from "@/components/Experience.astro";
-import ProfileCheck from "@/components/icons/ProfileCheck.astro";
-import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
-import Diplomas from "@/components/Diplomas.astro";
 import Hero from "@/components/Hero.astro";
-import Certificate from "@/components/icons/Certificate.astro";
 ---
 
 <Layout
-  title="Porfolio de Carlos Brayan Ramila Chorens - Desarrollador y Programador Web con +7 años de experiencia"
-  description="Contrata a Carlos Brayan Ramila Chorens para crear tu aplicación web. Desarrollador Web. Especializado en crear aplicaciones únicas."
+  title="PHP: Cronología de un Código"
+  description="“PHP: Cronología de un Código” es un viaje interactivo a través del tiempo, explorando los hitos y las innovaciones que han marcado la evolución de PHP, desde sus humildes comienzos hasta convertirse en uno de los lenguajes de programación más influyentes para el desarrollo web. Descubre las versiones, las personas y las historias detrás de este poderoso lenguaje de código abierto."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -28,39 +22,10 @@ import Certificate from "@/components/icons/Certificate.astro";
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <Briefcase class="size-8" />
-        Experiencia laboral
+        Linea Temporal
       </h2>
       <Experience />
     </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
     
-    <SectionContainer id="certificados">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Certificate class="size-8" />
-        Certificados y Diplomas
-      </h2>
-      <Diplomas />
-    </SectionContainer>
-
-    <SectionContainer id="sobre-mi">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </h2>
-      <AboutMe />
-    </SectionContainer>
   </div>
 </Layout>
